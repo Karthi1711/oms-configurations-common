@@ -6,8 +6,9 @@ message
   paymentBillingExchange: "payment-billing-exchange"
   paymentBillingQueue: "payment-billing-queue"
   paymentBillingRoutingKey: "payment-billing-routingkey"
-  
-
+  orderStatusExchange: "order-status-exchange"
+  orderStatusQueue: "order-status -queue"
+  orderStatusRoutingKey: "order-status-routingkey"
 
 # Enable  Logging pattern
 logging
