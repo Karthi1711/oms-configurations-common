@@ -1,5 +1,5 @@
 # Enable exchange and queue
-message
+message:
   orderPaymentExchange: "order-payment-exchange"
   orderPaymentQueue: "order-payment-queue"
   orderPaymentRoutingKey: "order-payment-routingkey"
@@ -11,8 +11,8 @@ message
   orderStatusRoutingKey: "order-status-routingkey"
 
 # Enable  Logging pattern
-logging
-  level
-    org
-      springframework
+logging:
+  level:
+    org:
+      springframework:
         web: "ERROR"
