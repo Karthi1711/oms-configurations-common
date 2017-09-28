@@ -1,14 +1,14 @@
 # Enable exchange and queue
 message:
-  orderPaymentExchange: "order-payment-exchange"
-  orderPaymentQueue: "order-payment-queue"
-  orderPaymentRoutingKey: "order-payment-routingkey"
-  paymentBillingExchange: "payment-billing-exchange"
-  paymentBillingQueue: "payment-billing-queue"
-  paymentBillingRoutingKey: "payment-billing-routingkey"
-  orderStatusExchange: "order-status-exchange"
-  orderStatusQueue: "order-status-queue"
-  orderStatusRoutingKey: "order-status-routingkey"
+  orderPaymentExchange: order-payment-exchange
+  orderPaymentQueue: order-payment-queue
+  orderPaymentRoutingKey: order-payment-routingkey
+  paymentBillingExchange: payment-billing-exchange
+  paymentBillingQueue: payment-billing-queue
+  paymentBillingRoutingKey: payment-billing-routingkey
+  orderStatusExchange: order-status-exchange
+  orderStatusQueue: order-status-queue
+  orderStatusRoutingKey: order-status-routingkey
 
 # Enable  Logging pattern
 logging:
