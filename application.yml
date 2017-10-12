@@ -9,10 +9,10 @@ message:
   orderStatusQueue: order-status-queue
 
 url:
-  mailServiceURL: http://localhost:9977/oms/mail
-  customerServiceURL: http://localhost:9091/customer/{customerId}
-  eventServiceURL: http://localhost:9095/event
-
+  mailServiceURL: https://mail-service.local.pcfdev.io/oms/mail
+  customerServiceURL: https://customer-service.local.pcfdev.io/customer/{customerId}
+  eventServiceURL: https://event-service.local.pcfdev.io/event
+  inventoryServiceURL: https://inventory-service.local.pcfdev.io/inventory/deleteProductRecord
 
 #logging
 logging:
