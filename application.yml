@@ -1,18 +1,23 @@
 # Enable exchange and queue
 message:
-  orderPaymentExchange: order-payment-exchange
-  orderPaymentQueue: order-payment-queue
-  orderPaymentRoutingKey: order-payment-routingkey
-  paymentBillingExchange: payment-billing-exchange
-  paymentBillingQueue: payment-billing-queue
-  paymentBillingRoutingKey: payment-billing-routingkey
-  orderStatusExchange: order-status-exchange
-  orderStatusQueue: order-status-queue
-  orderStatusRoutingKey: order-status-routingkey
+  orderBillingExchange: order-billing-exchange
+  orderBillingRoutingKey: order-billing-routingkey
+  orderBillingQueue: order-billing-queue
 
-# Enable  Logging pattern
+  orderStatusExchange: order-status-exchange
+  orderStatusRoutingKey: order-status-routingkey
+  orderStatusQueue: order-status-queue
+
+url:
+  mailServiceURL: http://localhost:9977/oms/mail
+  customerServiceURL: http://localhost:9091/customer/{customerId}
+  eventServiceURL: http://localhost:9095/event
+
+
+#logging
 logging:
-  level:
-    org:
-      springframework:
-        web: "ERROR"
+  level:
+    root: DEBUG
+    org.springframework.web: ERROR
+    com.oms: DEBUG
+
